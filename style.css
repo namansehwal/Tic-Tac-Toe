@@ -1,0 +1,43 @@
+body, h1{
+    background-color: #000;
+    background-image: radial-gradient(circle at top right,
+     rgba(121, 68, 154, 0.13), transparent),
+      radial-gradient(circle at 20% 80%, 
+        rgba(41, 196, 255, 0.13), transparent);
+
+}
+h1{
+    font-style: cursive;
+    font-size: 75px;
+    margin-bottom: 0.1px;
+   border-bottom: 30px solid ;
+    
+}
+canvas{
+    background-color: indianred;
+    border: 1px solid black;
+}
+button{
+    margin-top: 15px;
+    height: 100px;
+    width: 350px;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: limegreen;
+    color: gold;
+    font-family: cursive;
+    border: 10px solid gold;
+     
+}
+
+canvas:hover{
+    background-color: dodgerblue;
+}
+button:hover{
+    background-color: green;
+        border: 10px dashed gold;
+}
+
+
+
+
