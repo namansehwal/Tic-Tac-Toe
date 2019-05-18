@@ -1,42 +1,148 @@
 body, h1{
-    background-color: #000;
+    background-color:rgba(121, 68, 154, 0.13);
     background-image: radial-gradient(circle at top right,
      rgba(121, 68, 154, 0.13), transparent),
       radial-gradient(circle at 20% 80%, 
         rgba(41, 196, 255, 0.13), transparent);
+    margin: 0px;
+    font-family: 'Carter One', cursive;
+
+
+    background-color: #000;
+
+
+
+
 
 }
-h1{
-    font-style: cursive;
-    font-size: 75px;
-    margin-bottom: 0.1px;
-   border-bottom: 30px solid ;
+h1{  
+    font-size: 70px;
+    user-select: none;    
+}
+hr.first{
+    color: dodgerblue;
+    text-align: center;
+    border: none;
+    top: -0.5em;
+}
+hr.first:before {
+    content: "oxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxox"; 
+    font-size: 24px;
+    animation-name: ritle;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes ritle{
+    0%{
+        content: "oxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxox";
+    }
+    5%{
+        content: "xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo";
+    }
+    10%{
+        content: "oxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxox";
+    }
+    15%{
+        content: "xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo";
+    }
+    20%{
+        content: "oxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxox";
+    }
+    25%{
+        content: "xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo";
+    }
+    30%{
+        content: "oxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxox";
+    }
+    35%{
+        content: "xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo";
+    }
+    40%{
+        content: "oxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxox";
+    }
+    45%{
+        content: "xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo";
+    }
+    50%{
+        content: "oxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxox";
+    }
+    55%{
+        content: "xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo";
+    }
+    60%{
+        content: "oxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxox";
+    }
+    65%{
+        content: "xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo";
+    }
+    70%{
+        content: "oxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxox";
+    }
+    75%{
+        content: "xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo";
+    }
+    80%{
+        content: "oxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxox";
+    }
+    85%{
+        content: "xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo";
+    }
+    90%{
+        content: "oxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxox";
+    }
+    95%{
+        content: "xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo";
+    }
+    100%{
+        content: "oxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxox";
+    }
+}
+
+div#tic{
+    user-select: none;
     
 }
+div#button{
+    user-select: none;
+}
 canvas{
-    background-color: indianred;
-    border: 1px solid black;
+    
+   border: 1px solid white;
+    
+    
 }
 button{
     margin-top: 15px;
-    height: 100px;
-    width: 350px;
-    font-size: 50px;
+    height: 50px;
+    width: 200px;
+    font-size: 33px;
     font-weight: bold;
-    background-color: limegreen;
-    color: gold;
-    font-family: cursive;
-    border: 10px solid gold;
-     
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    user-select: none;
+    font-family: 'Carter One', cursive;
+    border-radius:4px;    
+}
+button#start{
+    width: 120px;
+    margin-right: 10px;
+}
+button#theme{
+    width: 80px;
+    height: 30px;
+    font-size: 20px;
 }
 
-canvas:hover{
-    background-color: dodgerblue;
-}
 button:hover{
-    background-color: green;
-        border: 10px dashed gold;
+    background-color: white;
+    color: dodgerblue;       
 }
+
+
 
 
 

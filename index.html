@@ -5,30 +5,27 @@
   <link  type="shortcut icon" href="x.ico">
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
 </head>
-<body text="aqua">
-<center><h1 id="hq">Tic Tac Toe Game</h1>
+<body text="white">
+<center><h1 id="hq">
+	<div id="top"> Tic Tac Toe </div></h1><hr class="first">
 </header>
 <h2 id="result"></h2>
-<section id="game">
-<div id="tic">	
-<canvas id="c1" height="150" width="150"></canvas>
-<canvas id="c2" height="150" width="150"></canvas>
-<canvas id="c3" height="150" width="150"></canvas>
-<br>
-<canvas id="c4" height="150" width="150"></canvas>
-<canvas id="c5" height="150" width="150"></canvas>
-<canvas id="c6" height="150" width="150"></canvas>
-<br>
-<canvas id="c7" height="150" width="150"></canvas>
-<canvas id="c8" height="150" width="150"></canvas>
-<canvas id="c9" height="150" width="150"></canvas>
-<br>
-</div>
-<button onclick="button()" id="NEW">NEW GAME</button> 
+
+<canvas id="c1" height="600" width="600"></canvas>
+
+<div id="button"><button class="optbutton" id="start">START</button>
+<button onclick="button()" class="optbutton">NEW GAME</button>
+<button onclick="darktheme()" ondblclick="lighttheme()">theme</button>
+</div> 
+<hr class="first">
 </section>
 </center>
-<script type="text/javascript" src="script.js">
+
+<script src="script.js">
+
 </script>
 </body>
 </html>
