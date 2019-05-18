@@ -5,5 +5,5 @@ var text=document.getElementById("top");function button(){location.reload()}var 
    c.b9 === false && win=== true) {
   text.innerHTML = "!!!DRAW!!!";
   win = false; 
-}
+ }
 });
