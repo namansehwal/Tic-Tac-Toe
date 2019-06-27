@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			background: black;
+			margin: 0px;
+			font-family: arial;
+			
+		}
+		div#midtext{
+			color: white;
+			font-size: 540px;
+			top: 30%;
+			left: 38%;
+			position: fixed;
+			user-select: none;
+          
+		}
+		div#greet{
+			color: white;
+			font-size: 220px;
+			top: 52%;
+			left: 30%;
+			position: fixed;
+			user-select: none;
+		}
+	</style>
+</head>
+<body>
+
+<div id="midtext"><div id="hour">11:00</div>
+<div id="greet">Good Morning, Jaspreet</div>
+</div>
+<script type="text/javascript">
+var text = document.getElementById("hour");	
+var g = document.getElementById("greet");
+
+function clock() {
+	var date = new Date(), gt, hour = date.getHours(), min = date.getMinutes();
+   if (hour < 5 || hour > 20) {
+  gt = 'Good Night';}
+else if (hour < 12) {
+	gt = "Good morning"}
+else if (hour < 19) {
+	gt = "Good Afternoon"}
+else if (hour < 20) {
+	gt = "Good Evening"}
+text.innerHTML = hour +":" + min;
+g.innerHTML = gt+ ",  Naman" ;
+}
+setInterval(clock, 1000);
+
+</script>
+
+
+<!-- <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script>
+let url = 'https://api.unsplash.com/photos/random/?client_id=34d72165eb5da07d534c857c07590dbaf6fe2db95a13cd22e499b801f7982001&per_page=1&orientation=landscape&id=Wallpaper';
+$.getJSON(url, my);
+function my(data) {
+	var x = "url("+ data.urls.full+ ") ";
+	 $("body").css({"background": x, "background-size": "cover", "background-repeat": "no-repeat", "background-attachment": "fixed"});
+}
+	</script> -->
+</body>
+</html>
